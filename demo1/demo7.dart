@@ -1,13 +1,14 @@
 void main() {
-  // 箭头函数
-  List l1 = [1, 2];
+  // // 箭头函数
+  // List l1 = [1, 2];
 
-  l1.forEach((item) {
-    // print(item);
-  });
+  // l1.forEach((item) {
+  //   print(item);
+  // });
 
   // l1.forEach((item) => print(item));
 
+  List l1 = [1, 2];
   var l2 = l1.map((item) {
     return item % 2 == 0 ? item * 2 : item;
   });

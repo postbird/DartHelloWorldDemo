@@ -18,7 +18,7 @@ class Cat extends Animal {
   speak() {
     print('miao');
   }
-  
+
   run() {
     print('dog run!');
   }

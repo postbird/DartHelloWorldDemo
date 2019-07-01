@@ -2,6 +2,7 @@ class A {
   void fnA() {
     print('fnA');
   }
+
   void run() {
     print('runA');
   }
@@ -11,12 +12,13 @@ abstract class B {
   void fnB() {
     print('fnB');
   }
+
   void run() {
     print('runB');
   }
 }
 
-class C extends Object with A,B {
+class C extends Object with A, B {
   void fnA() {
     print('C_fnA');
   }

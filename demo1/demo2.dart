@@ -76,24 +76,24 @@ void main() {
 
 
   // // 类型转换
-  // String str1= 'name';
-  // String str2 = '123';
-  // int num1 = 1;
-  // double num2 = 2.2;
-  // // int res1 = int.parse(str1); // err
-  // int res2 = int.parse(str2);
-  // print(res2);
-  // double res3 = double.parse(str2);
-  // print(res3);
-  // // res2 = int.parse(num1); // err
-  // print(num2.toString());
-  // if(str1.isEmpty) {
-  //   print('str1 is not empty');
-  // }
-  // num2 = num2 / 0;
-  // if(num2.isNaN) {
-  //   print('num2 is Nan');
-  // }
+String str1= 'name';
+String str2 = '123';
+int num1 = 1;
+double num2 = 2.2;
+// int res1 = int.parse(str1); // err
+int res2 = int.parse(str2);
+print(res2);
+double res3 = double.parse(str2);
+print(res3);
+// res2 = int.parse(num1); // err
+print(num2.toString());
+if(str1.isEmpty) {
+  print('str1 is not empty');
+}
+num2 = num2 / 0;
+if(num2.isNaN) {
+  print('num2 is Nan');
+}
 
 
 

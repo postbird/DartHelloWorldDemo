@@ -10,7 +10,6 @@ abstract class DB {
 }
 
 class Mysql implements DB {
-  // 实现接口
   @override
   String host;
 
@@ -24,7 +23,8 @@ class Mysql implements DB {
   String user;
 
   Mysql(this.host, this.user, this.pass, [this.port = '3306']) {
-    print('[ok] connect to ${this.host}:${this.port}, use ${this.user}:${this.pass}');
+    print(
+        '[ok] connect to ${this.host}:${this.port}, use ${this.user}:${this.pass}');
   }
 
   @override

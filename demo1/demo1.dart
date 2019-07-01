@@ -2,7 +2,7 @@ void main() {
   // print('hello world!');
   // var firstName = 'post';
   // String lastName = 'bird';
-  // var age = 24;
+  // var age = 122;
   // print(firstName + lastName + ' , age is ' + age.toString());
 
 
@@ -17,7 +17,7 @@ void main() {
 
   // const lastName = 'postbird';
   // final firstName = 'bird  ';
-  // // lastName = '123';
+  // lastName = '123';
   // // firstName = '123';
   // final time = new DateTime.now();
   // // const time2 = new DateTime.now();
@@ -43,9 +43,7 @@ void main() {
   // print(price * num1);
 
 
-  // bool flag = true;
-  // // flag = 1;
-  // print(flag);
+
   // bool flag = true;
   // if(flag) {
   //   print('--- true');
@@ -64,9 +62,9 @@ void main() {
   //   print('num1 != num3');
   // }
   // int a = 1;
-  // if(a) {
-  //   print('true');
-  // }
+  // // if(a) {
+  // //   print('true');
+  // // }
 
 
   // List 类型
@@ -116,16 +114,16 @@ void main() {
   // print(person2['work']);
 
 
-  // // 判断类型
-  // var value = 123;
-  // if(value is String) {
-  //   print('${value} is string');
-  // } else if (value is int) {
-  //   print('${value} is int');
-  // } else if (value is double) {
-  //   print('${value} is double');
-  // } else {
-  //   print('${value} is other type');
-  // }
+  // 判断类型
+  var value = 123;
+  if(value is String) {
+    print('${value} is string');
+  } else if (value is int) {
+    print('${value} is int');
+  } else if (value is double) {
+    print('${value} is double');
+  } else {
+    print('${value} is other type');
+  }
 
 }

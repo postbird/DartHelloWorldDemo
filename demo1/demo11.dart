@@ -1,11 +1,8 @@
 class Animal {
   String name;
   int age;
-
   Animal(this.name, this.age);
-
   void speak() {}
-
   void printInfo() {
     print('My name is ${name}');
   }
@@ -18,7 +15,6 @@ class Animal {
 class Dog extends Animal {
   String nickName;
   Dog(String name, int age, [String nickName]) : super(name, age);
-
   @override
   void speak() {
     this.parentPrint();
@@ -27,17 +23,13 @@ class Dog extends Animal {
   }
 
   void setNickName(String name) {
-    if(name != null) {
+    if (name != null) {
       this.nickName = name;
     }
   }
 
   get fullInfo {
-    return {
-      "name": this.name,
-      "age": this.age,
-      "nickName": this.nickName
-    };
+    return {"name": this.name, "age": this.age, "nickName": this.nickName};
   }
 }
 

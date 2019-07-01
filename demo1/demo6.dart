@@ -3,14 +3,14 @@ void printTitle(String title) {
 }
 
 String getName(String firstName, String lastName) {
-  String res =  'my name is ${firstName}-${lastName}';
+  String res = 'my name is ${firstName}-${lastName}';
   printTitle(res);
   return res;
 }
 
 int getSum(int num) {
   int sum = 0;
-  for (int i=1; i<=num; i++) {
+  for (int i = 1; i <= num; i++) {
     sum += i;
   }
   return sum;
@@ -18,23 +18,41 @@ int getSum(int num) {
 
 // 可选参数 & 默认参数
 void printInfo(String name, [int age, String sex = '男']) {
-  if(age == null) {
+  if (age == null) {
     print('my name is ${name}, sex is ${sex}');
   } else {
     print('my name is ${name}, age is ${age}, sex is ${sex}');
   }
 }
+
 // 命名参数
 void printInfo2(String name, {int age, String sex = '男'}) {
-  if(age == null) {
+  if (age == null) {
     print('my name is ${name}, sex is ${sex}');
   } else {
     print('my name is ${name}, age is ${age}, sex is ${sex}');
   }
 }
+
+// 命名参数
+void printInfo3(String name, {int age, String sex = '男'}) {
+  if (age == null) {
+    print('my name is ${name}, sex is ${sex}');
+  } else {
+    print('my name is ${name}, age is ${age}, sex is ${sex}');
+  }
+}
+
+// class Test {
+//   final String name;
+//   Test({
+//     @required this.name,
+//   });
+// }
+
 // 函数参数
 executeFunction(fn, [args]) {
-  if(fn != null) {
+  if (fn != null) {
     return fn(args);
   }
 }
@@ -48,7 +66,7 @@ void main() {
   printInfo('postbird');
   printInfo('postbird', 20);
   printInfo('postbird', 20, '女');
-  printInfo2('postbird', age:20, sex:'女');
+  printInfo2('postbird', age: 20, sex: '女');
   var res = executeFunction(getSum, 4);
   print(res);
 }

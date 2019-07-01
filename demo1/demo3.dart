@@ -43,13 +43,13 @@ void main() {
   // }
 
 
-  // while
+  // // while
   // int num1 = 10;
-  // while(num1 >= 1) {
-  //   print(num1);
-  //   num1 -=1 ;
-  // }
-  // do while
+  // // while(num1 >= 1) {
+  // //   print(num1);
+  // //   num1 -=1 ;
+  // // }
+  // // do while
   // do{
   //   print(num1);
   //   num1 -=1;

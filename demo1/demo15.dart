@@ -6,7 +6,7 @@ abstract class B {
   fnB();
 }
 
-class C implements A,B {
+class C implements A, B {
   @override
   fnA() {
     print('FN------A');
@@ -16,7 +16,6 @@ class C implements A,B {
   fnB() {
     print('FN------B');
   }
-
 }
 
 void main() {
